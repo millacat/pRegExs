@@ -2,8 +2,8 @@
 A DSL for probabilistic regular expressions implemented as an embedded language in `F#`.
 The regular expressions are defined as a sum type being partly recursive:
 
-```type Probability = float
-
+```
+type Probability = float
 type Regex =
 | Sym of char
 | Epsilon
@@ -11,7 +11,8 @@ type Regex =
 | Or of Regex ∗ Regex ∗ Probability
 | Star of Regex ∗ Probability
 | Maybe of Regex ∗ Probability
-| Plus of Regex ∗ Probability```
+| Plus of Regex ∗ Probability
+```
 
 Run using interpreter:
 `fsharpi regex.fsx`
