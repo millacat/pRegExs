@@ -4,7 +4,7 @@ The regular expressions are defined as a sum type being partly recursive:
 
 `type Probability = float`
 
-`type Regex =
+`type Regex = \n
 | Sym of char
 | Epsilon
 | Conc of Regex ∗ Regex
