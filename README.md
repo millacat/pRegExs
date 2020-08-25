@@ -2,7 +2,7 @@
 A DSL for probabilistic regular expressions implemented as an embedded language in `F#`.
 The regular expressions are defined as a sum type being partly recursive:
 
-`type P r o b a b i l i t y = f l o a t
+`type Probability = float
 
 type Regex =
 | Sym of char
